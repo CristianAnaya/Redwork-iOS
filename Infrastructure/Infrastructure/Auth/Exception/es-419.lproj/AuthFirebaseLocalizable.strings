@@ -1,0 +1,12 @@
+/* 
+  AuthFirebaseLocalizable.strings
+  Infrastructure
+
+  Created by CRISTIAN ANAYA on 21/07/23.
+  
+*/
+
+"invalidPhoneNumberMessage" = "El número de teléfono proporcionado no es válido.";
+"invalidVerificationCodeMessage" = "El código de verificación recibido no es válido.";
+"userNotFoundMessage" = "Usuario no encontrado después de la autenticación con OTP.";
+"customErrorMessage" = "Ha ocurrido un error durante la autenticación.";

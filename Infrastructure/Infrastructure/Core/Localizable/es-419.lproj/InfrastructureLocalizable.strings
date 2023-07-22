@@ -1,0 +1,9 @@
+/* 
+  InfrastructureLocalizable.strings
+  Infrastructure
+
+  Created by CRISTIAN ANAYA on 21/07/23.
+  
+*/
+"technicalExceptionMessage" = "Estamos teniendo problemas, intente más tarde.";
+"notConnectedToNetwork" = "Verifica tu conexión de internet.";

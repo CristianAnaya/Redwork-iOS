@@ -1,0 +1,9 @@
+/* 
+  AuthLocalizable.strings
+  Domain
+
+  Created by CRISTIAN ANAYA on 21/07/23.
+  
+*/
+
+"emptyPhoneParameterMessage" = "You must enter a phone number to continue.";

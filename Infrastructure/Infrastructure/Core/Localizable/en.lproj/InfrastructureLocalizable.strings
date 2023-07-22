@@ -1,0 +1,12 @@
+/* 
+  InfrastructureLocalizable.strings
+  Infrastructure
+
+  Created by CRISTIAN ANAYA on 21/07/23.
+  
+*/
+
+// MARK: -Exception
+"technicalExceptionMessage" = "we're having problems, try more later.";
+"notConnectedToNetwork" = "Verify your network.";
+
