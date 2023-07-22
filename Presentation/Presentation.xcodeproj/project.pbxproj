@@ -8,6 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		71AF18A4A2F6144CD5B0A772 /* Pods_Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236C359B31A4C5CE704F9D71 /* Pods_Presentation.framework */; };
+		ED744C812A6C160200D4A826 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C7C2A6C160200D4A826 /* Constants.swift */; };
+		ED744C822A6C160200D4A826 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C7D2A6C160200D4A826 /* CountryPicker.swift */; };
+		ED744C842A6C160200D4A826 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C802A6C160200D4A826 /* Extensions.swift */; };
+		ED744C872A6C241D00D4A826 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C862A6C241D00D4A826 /* LoginViewModel.swift */; };
+		ED744C8A2A6C32A100D4A826 /* CountryNumbers.json in Resources */ = {isa = PBXBuildFile; fileRef = ED744C892A6C32A100D4A826 /* CountryNumbers.json */; };
+		ED744C8D2A6C32FC00D4A826 /* CPData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C8C2A6C32FC00D4A826 /* CPData.swift */; };
+		ED744C8E2A6C44A300D4A826 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD969062A6B2CFB001AA1CD /* Poppins-Bold.ttf */; };
+		ED744C8F2A6C44A300D4A826 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD969032A6B2CFB001AA1CD /* Poppins-Italic.ttf */; };
+		ED744C902A6C44A300D4A826 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD969052A6B2CFB001AA1CD /* Poppins-Light.ttf */; };
+		ED744C912A6C44A300D4A826 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD969072A6B2CFB001AA1CD /* Poppins-Medium.ttf */; };
+		ED744C922A6C44A300D4A826 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD969042A6B2CFB001AA1CD /* Poppins-Regular.ttf */; };
+		ED744C972A6C4A0400D4A826 /* OTPComposableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C962A6C4A0400D4A826 /* OTPComposableView.swift */; };
+		ED744C992A6C4EAF00D4A826 /* LoginViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C982A6C4EAF00D4A826 /* LoginViewContent.swift */; };
+		ED744C9B2A6C4FFD00D4A826 /* CircularIndicatorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C9A2A6C4FFD00D4A826 /* CircularIndicatorMessage.swift */; };
+		ED744C9D2A6C50C000D4A826 /* GetOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C9C2A6C50C000D4A826 /* GetOTP.swift */; };
+		ED744C9F2A6C56F900D4A826 /* LoginViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C9E2A6C56F900D4A826 /* LoginViewModelState.swift */; };
+		ED744CA22A6C5BA300D4A826 /* LoginDependencyAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744CA12A6C5BA300D4A826 /* LoginDependencyAssembler.swift */; };
 		EDC54D162A6A1A6000404BFB /* PresentationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC54D152A6A1A6000404BFB /* PresentationApp.swift */; };
 		EDC54D1A2A6A1A6100404BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC54D192A6A1A6100404BFB /* Assets.xcassets */; };
 		EDC54D1D2A6A1A6100404BFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC54D1C2A6A1A6100404BFB /* Preview Assets.xcassets */; };
@@ -61,6 +78,18 @@
 		236C359B31A4C5CE704F9D71 /* Pods_Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3313109C6D257E8EF132366B /* Pods-Presentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.debug.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.debug.xcconfig"; sourceTree = "<group>"; };
 		CBCCEB6564E3B79682735C99 /* Pods-Presentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.release.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.release.xcconfig"; sourceTree = "<group>"; };
+		ED744C7C2A6C160200D4A826 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ED744C7D2A6C160200D4A826 /* CountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
+		ED744C802A6C160200D4A826 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ED744C862A6C241D00D4A826 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		ED744C892A6C32A100D4A826 /* CountryNumbers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CountryNumbers.json; path = ../../../../../../../Downloads/CountryNumbers.json; sourceTree = "<group>"; };
+		ED744C8C2A6C32FC00D4A826 /* CPData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPData.swift; sourceTree = "<group>"; };
+		ED744C962A6C4A0400D4A826 /* OTPComposableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPComposableView.swift; sourceTree = "<group>"; };
+		ED744C982A6C4EAF00D4A826 /* LoginViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewContent.swift; sourceTree = "<group>"; };
+		ED744C9A2A6C4FFD00D4A826 /* CircularIndicatorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularIndicatorMessage.swift; sourceTree = "<group>"; };
+		ED744C9C2A6C50C000D4A826 /* GetOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOTP.swift; sourceTree = "<group>"; };
+		ED744C9E2A6C56F900D4A826 /* LoginViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelState.swift; sourceTree = "<group>"; };
+		ED744CA12A6C5BA300D4A826 /* LoginDependencyAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDependencyAssembler.swift; sourceTree = "<group>"; };
 		EDC54D122A6A1A6000404BFB /* Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Presentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC54D152A6A1A6000404BFB /* PresentationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationApp.swift; sourceTree = "<group>"; };
 		EDC54D192A6A1A6100404BFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,11 +110,11 @@
 		EDD968F62A6B184B001AA1CD /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		EDD968FB2A6B189A001AA1CD /* ClientHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomeView.swift; sourceTree = "<group>"; };
 		EDD968FE2A6B2BD7001AA1CD /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		EDD969032A6B2CFB001AA1CD /* poppins_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins_italic.ttf; sourceTree = "<group>"; };
-		EDD969042A6B2CFB001AA1CD /* poppins_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins_regular.ttf; sourceTree = "<group>"; };
-		EDD969052A6B2CFB001AA1CD /* poppins_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins_light.ttf; sourceTree = "<group>"; };
-		EDD969062A6B2CFB001AA1CD /* poppins_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins_bold.ttf; sourceTree = "<group>"; };
-		EDD969072A6B2CFB001AA1CD /* poppins_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins_medium.ttf; sourceTree = "<group>"; };
+		EDD969032A6B2CFB001AA1CD /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		EDD969042A6B2CFB001AA1CD /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		EDD969052A6B2CFB001AA1CD /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		EDD969062A6B2CFB001AA1CD /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		EDD969072A6B2CFB001AA1CD /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		EDD969082A6B2D0D001AA1CD /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		EDD9690A2A6B2D2A001AA1CD /* FontNameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontNameManager.swift; sourceTree = "<group>"; };
 		EDD9690C2A6B2DFE001AA1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -132,6 +161,78 @@
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		ED744C792A6C15EF00D4A826 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ED744C7A2A6C160200D4A826 /* Sources */,
+				ED744C9A2A6C4FFD00D4A826 /* CircularIndicatorMessage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ED744C7A2A6C160200D4A826 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ED744C7B2A6C160200D4A826 /* CountryKit */,
+			);
+			name = Sources;
+			path = "../../../../../../../Downloads/CountryKit-main/Sources";
+			sourceTree = "<group>";
+		};
+		ED744C7B2A6C160200D4A826 /* CountryKit */ = {
+			isa = PBXGroup;
+			children = (
+				ED744C7C2A6C160200D4A826 /* Constants.swift */,
+				ED744C7D2A6C160200D4A826 /* CountryPicker.swift */,
+				ED744C802A6C160200D4A826 /* Extensions.swift */,
+			);
+			path = CountryKit;
+			sourceTree = "<group>";
+		};
+		ED744C852A6C240C00D4A826 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED744C862A6C241D00D4A826 /* LoginViewModel.swift */,
+				ED744C9E2A6C56F900D4A826 /* LoginViewModelState.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED744C882A6C328C00D4A826 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				ED744C8B2A6C32E800D4A826 /* Country */,
+				ED744C892A6C32A100D4A826 /* CountryNumbers.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		ED744C8B2A6C32E800D4A826 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				ED744C8C2A6C32FC00D4A826 /* CPData.swift */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		ED744C932A6C496600D4A826 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ED744C962A6C4A0400D4A826 /* OTPComposableView.swift */,
+				ED744C982A6C4EAF00D4A826 /* LoginViewContent.swift */,
+				ED744C9C2A6C50C000D4A826 /* GetOTP.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ED744CA02A6C5B9100D4A826 /* DependencyAssembler */ = {
+			isa = PBXGroup;
+			children = (
+				ED744CA12A6C5BA300D4A826 /* LoginDependencyAssembler.swift */,
+			);
+			path = DependencyAssembler;
 			sourceTree = "<group>";
 		};
 		EDC54D092A6A1A5F00404BFB = {
@@ -234,6 +335,8 @@
 		EDD968AE2A6ADAF3001AA1CD /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				ED744CA02A6C5B9100D4A826 /* DependencyAssembler */,
+				ED744C852A6C240C00D4A826 /* ViewModel */,
 				EDD968F22A6B17AE001AA1CD /* View */,
 			);
 			path = Login;
@@ -277,6 +380,8 @@
 		EDD968B52A6ADBFC001AA1CD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				ED744C882A6C328C00D4A826 /* Resource */,
+				ED744C792A6C15EF00D4A826 /* Components */,
 				EDD968B62A6ADC1A001AA1CD /* ViewModelState.swift */,
 			);
 			path = Shared;
@@ -294,6 +399,7 @@
 		EDD968F22A6B17AE001AA1CD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED744C932A6C496600D4A826 /* Components */,
 				EDD968F32A6B17D7001AA1CD /* LoginView.swift */,
 			);
 			path = View;
@@ -363,11 +469,11 @@
 		EDD969022A6B2C89001AA1CD /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				EDD969062A6B2CFB001AA1CD /* poppins_bold.ttf */,
-				EDD969032A6B2CFB001AA1CD /* poppins_italic.ttf */,
-				EDD969052A6B2CFB001AA1CD /* poppins_light.ttf */,
-				EDD969072A6B2CFB001AA1CD /* poppins_medium.ttf */,
-				EDD969042A6B2CFB001AA1CD /* poppins_regular.ttf */,
+				EDD969062A6B2CFB001AA1CD /* Poppins-Bold.ttf */,
+				EDD969032A6B2CFB001AA1CD /* Poppins-Italic.ttf */,
+				EDD969052A6B2CFB001AA1CD /* Poppins-Light.ttf */,
+				EDD969072A6B2CFB001AA1CD /* Poppins-Medium.ttf */,
+				EDD969042A6B2CFB001AA1CD /* Poppins-Regular.ttf */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -478,8 +584,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED744C8E2A6C44A300D4A826 /* Poppins-Bold.ttf in Resources */,
+				ED744C8F2A6C44A300D4A826 /* Poppins-Italic.ttf in Resources */,
+				ED744C902A6C44A300D4A826 /* Poppins-Light.ttf in Resources */,
+				ED744C912A6C44A300D4A826 /* Poppins-Medium.ttf in Resources */,
+				ED744C922A6C44A300D4A826 /* Poppins-Regular.ttf in Resources */,
 				EDC54D1D2A6A1A6100404BFB /* Preview Assets.xcassets in Resources */,
 				EDD969122A6B373D001AA1CD /* intro2.json in Resources */,
+				ED744C8A2A6C32A100D4A826 /* CountryNumbers.json in Resources */,
 				EDD969142A6B373D001AA1CD /* intro3.json in Resources */,
 				EDC54D1A2A6A1A6100404BFB /* Assets.xcassets in Resources */,
 				EDD968762A6ABD64001AA1CD /* GoogleService-Info.plist in Resources */,
@@ -536,26 +648,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED744C8D2A6C32FC00D4A826 /* CPData.swift in Sources */,
 				EDD969232A6B50F7001AA1CD /* OnBoardingDependencyAssembler.swift in Sources */,
 				EDD968B72A6ADC1A001AA1CD /* ViewModelState.swift in Sources */,
 				EDD969172A6B3993001AA1CD /* LottieView.swift in Sources */,
 				EDD968FC2A6B189A001AA1CD /* ClientHomeView.swift in Sources */,
+				ED744C972A6C4A0400D4A826 /* OTPComposableView.swift in Sources */,
+				ED744C9B2A6C4FFD00D4A826 /* CircularIndicatorMessage.swift in Sources */,
 				EDC54D162A6A1A6000404BFB /* PresentationApp.swift in Sources */,
+				ED744C9D2A6C50C000D4A826 /* GetOTP.swift in Sources */,
 				EDD9690B2A6B2D2A001AA1CD /* FontNameManager.swift in Sources */,
+				ED744C812A6C160200D4A826 /* Constants.swift in Sources */,
 				EDD968EF2A6B0BA8001AA1CD /* AnimatedSplash.swift in Sources */,
+				ED744C872A6C241D00D4A826 /* LoginViewModel.swift in Sources */,
 				EDD968BB2A6ADEF6001AA1CD /* SplashViewModel.swift in Sources */,
 				EDD968EB2A6AF260001AA1CD /* AuthDependencyInjection.swift in Sources */,
+				ED744C992A6C4EAF00D4A826 /* LoginViewContent.swift in Sources */,
 				EDD968ED2A6AF27F001AA1CD /* SplashDependencyAssembler.swift in Sources */,
 				EDD969192A6B451A001AA1CD /* OnBoardingViewModel.swift in Sources */,
 				EDD968E92A6AF20E001AA1CD /* DependencyInjectionContainer.swift in Sources */,
 				EDD968AA2A6ADA44001AA1CD /* InfrastructureDependencyInjection.swift in Sources */,
 				EDD969202A6B4E20001AA1CD /* OnBoardingContent.swift in Sources */,
 				EDD9691D2A6B4A5B001AA1CD /* SaveFirstTime.swift in Sources */,
+				ED744C822A6C160200D4A826 /* CountryPicker.swift in Sources */,
 				EDD9691B2A6B499D001AA1CD /* OnBoardingViewModelState.swift in Sources */,
 				EDD968FF2A6B2BD7001AA1CD /* Color.swift in Sources */,
 				EDD969092A6B2D0D001AA1CD /* FontManager.swift in Sources */,
+				ED744C9F2A6C56F900D4A826 /* LoginViewModelState.swift in Sources */,
+				ED744C842A6C160200D4A826 /* Extensions.swift in Sources */,
 				EDD968F42A6B17D7001AA1CD /* LoginView.swift in Sources */,
 				EDD968F72A6B184B001AA1CD /* OnBoardingView.swift in Sources */,
+				ED744CA22A6C5BA300D4A826 /* LoginDependencyAssembler.swift in Sources */,
 				EDD968B42A6ADB6E001AA1CD /* SplashView.swift in Sources */,
 				EDD968F12A6B1463001AA1CD /* GetSession.swift in Sources */,
 			);

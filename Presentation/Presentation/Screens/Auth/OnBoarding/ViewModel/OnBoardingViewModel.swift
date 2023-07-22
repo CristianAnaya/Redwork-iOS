@@ -12,7 +12,7 @@ import Combine
 final class OnBoardingViewModel: ObservableObject {
     private let saveFirstTimeUseCase: SaveFirstTimeUseCase
     private var cancellables = Set<AnyCancellable>()
-    @Published var state: RegisterViewModelState = .initial
+    @Published var state: OnBoardingViewModelState = .initial
 
     init(saveFirstTimeUseCase: SaveFirstTimeUseCase) {
         self.saveFirstTimeUseCase = saveFirstTimeUseCase

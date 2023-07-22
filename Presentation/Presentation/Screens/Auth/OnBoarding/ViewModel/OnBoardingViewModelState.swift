@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum RegisterViewModelState: Equatable {
+enum OnBoardingViewModelState: Equatable {
     case initial
     case success
     case failure(error: String)

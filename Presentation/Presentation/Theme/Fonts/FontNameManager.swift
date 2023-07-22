@@ -10,10 +10,10 @@ import SwiftUI
 
 struct FontNameManager {
     struct Poppins {
-        static let bold = "poppins_bold"
-        static let italic = "poppins_italic"
-        static let light = "poppins_light"
-        static let medium = "poppins_medium"
-        static let regular = "poppins_regular"
+        static let bold = "Poppins-Bold"
+        static let italic = "Poppins-Italic"
+        static let light = "Poppins-Light"
+        static let medium = "Poppins-Medium"
+        static let regular = "Poppins-Regular"
     }
 }

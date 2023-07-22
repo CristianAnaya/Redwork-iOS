@@ -19,16 +19,18 @@ struct AuthFirebaseRepository: AuthDataSourceRepository {
     
     func getOTP(phone: String, country: String) -> AnyPublisher<String, Error> {
         return Future<String, Error> { promise in
-            PhoneAuthProvider.provider().verifyPhoneNumber(phone, uiDelegate: nil) { verificationID, error in
+            PhoneAuthProvider.provider().verifyPhoneNumber("\(country)\(phone)", uiDelegate: nil) { verificationID, error in
                 if let nsError = error as NSError? {
                     if let error = nsError as NSError?, let errorCode = AuthErrorCode.Code(rawValue: error.code) {
                         switch errorCode {
                         case .invalidPhoneNumber:
                             promise(.failure(AuthFirebaseException.invalidPhoneNumber))
                         default:
+                            print("PROXY 1: \(error)")
                             promise(.failure(AuthFirebaseException.customError))
                         }
                     } else {
+                        print("PROXY 2: \(error)")
                         promise(.failure(AuthFirebaseException.customError))
                     }
                 } else if let verificationID = verificationID {

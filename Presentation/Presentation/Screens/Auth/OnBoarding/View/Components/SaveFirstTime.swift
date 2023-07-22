@@ -10,7 +10,7 @@ import SwiftUI
 struct SaveFirstTime: View {
     
     @ObservedObject var viewModel: OnBoardingViewModel
-
+    
     var body: some View {
         NavigationView {
             switch viewModel.state {

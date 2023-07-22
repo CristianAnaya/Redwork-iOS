@@ -26,6 +26,7 @@ struct GetSession: View {
                             ClientHomeView()
                         } else {
                             LoginView()
+                                .environmentObject(DependencyInjectionContainer.shared.resolve(LoginViewModel.self)!)
                         }
                     }
                 }

@@ -8,6 +8,7 @@
 import Foundation
 import Domain
 import Combine
+import UIKit
 
 final class SplashViewModel: ObservableObject {
     private let getSessionUseCase: GetSessionUseCase
