@@ -207,6 +207,9 @@ struct OnboardingButtonStyle: ButtonStyle {
 
 struct LoginViewContent_Previews: PreviewProvider {
     static var previews: some View {
-        LoginViewContent(viewModel: LoginViewModel(getOTPUseCase: DependencyInjectionContainer.shared.resolve(GetOTPUseCase.self)!), countryCode: "+1", countryFlag: "🇺🇸", countryPattern: "### ### ####", countryLimit: 17)
+        LoginViewContent(viewModel: LoginViewModel(
+            getOTPUseCase: DependencyInjectionContainer.shared.resolve(GetOTPUseCase.self)!,
+            loginUseCase: DependencyInjectionContainer.shared.resolve(LoginUseCase.self)!
+        ), countryCode: "+1", countryFlag: "🇺🇸", countryPattern: "### ### ####", countryLimit: 17)
     }
 }

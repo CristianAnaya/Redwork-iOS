@@ -16,9 +16,14 @@ final class LoginDependencyAssembler: Assembly {
             GetOTPUseCase(authRepository: resolver.resolve(AuthRepository.self)!)
         }.inObjectScope(.container)
         
+        container.register(LoginUseCase.self) { resolver in
+            LoginUseCase(authRepository: resolver.resolve(AuthRepository.self)!)
+        }.inObjectScope(.container)
+        
         container.register(LoginViewModel.self) { resolver in
             LoginViewModel(
-                getOTPUseCase: resolver.resolve(GetOTPUseCase.self)!
+                getOTPUseCase: resolver.resolve(GetOTPUseCase.self)!,
+                loginUseCase: resolver.resolve(LoginUseCase.self)!
             )
         }
     }

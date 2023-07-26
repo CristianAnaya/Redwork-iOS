@@ -22,6 +22,7 @@ target 'Presentation' do
   # Pods for Presentation
   pod alamofire, alamofireVersion
   pod 'lottie-ios'
+  pod 'SwiftUI-SimpleToast', :git => 'https://github.com/sanzaru/SimpleToast.git'
   pod swinject, swinjectVersion
   pod firebaseAnalytics, firebaseAnalyticsVersion
   pod firebaseAuth, firebaseAuthVersion

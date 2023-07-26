@@ -20,6 +20,11 @@ public class AuthModuleDependencyAssembler: Assembly {
         }
         .inObjectScope(.container)
         
+        container.register(AuthRemoteRepository.self) { _ in
+            AuthAlamofireRepository(httpClient: container.resolve(HttpClient.self)!)
+        }
+        .inObjectScope(.container)
+        
         container.register(AuthTemporalRepository.self) { _ in
             AuthUserDefaultsRepository()
         }
@@ -29,6 +34,7 @@ public class AuthModuleDependencyAssembler: Assembly {
             return AuthProxy(
                 networkVerify: container.resolve(NetworkVerify.self)!,
                 dataSourceRepository: container.resolve(AuthDataSourceRepository.self)!,
+                remoteRepository: container.resolve(AuthRemoteRepository.self)!,
                 temporalRepository: container.resolve(AuthTemporalRepository.self)!
             )
         }

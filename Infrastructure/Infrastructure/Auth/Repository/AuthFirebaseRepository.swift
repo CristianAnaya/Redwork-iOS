@@ -30,7 +30,6 @@ struct AuthFirebaseRepository: AuthDataSourceRepository {
                             promise(.failure(AuthFirebaseException.customError))
                         }
                     } else {
-                        print("PROXY 2: \(error)")
                         promise(.failure(AuthFirebaseException.customError))
                     }
                 } else if let verificationID = verificationID {
@@ -41,6 +40,7 @@ struct AuthFirebaseRepository: AuthDataSourceRepository {
     }
     
     func loginWithOTP(phone: String, code: String, verificationId: String) -> AnyPublisher<String, Error> {
+        print("loginWithOTP \(code) \(verificationId)")
         return Future<String, Error> { promise in
             let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationId, verificationCode: code)
             
@@ -61,7 +61,7 @@ struct AuthFirebaseRepository: AuthDataSourceRepository {
                         promise(.failure(AuthFirebaseException.customError))
                     }
                 } else {
-                    if let uid = authResult?.user.uid {
+                    if (authResult?.user.uid) != nil {
                         promise(.success(phone))
                     } else {
                         promise(.failure(AuthFirebaseException.userNotFound))

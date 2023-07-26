@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0DA44305FF019664133862F7 /* Pods_Infrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6721DD7EA8A43702B73BA905 /* Pods_Infrastructure.framework */; };
+		ED03EEE82A71519500F93ED7 /* AuthRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED03EEE72A71519500F93ED7 /* AuthRemoteRepository.swift */; };
+		ED03EEEB2A7168A200F93ED7 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED03EEEA2A7168A200F93ED7 /* LoginRequest.swift */; };
+		ED03EEED2A716ABC00F93ED7 /* AuthAlamofireRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED03EEEC2A716ABC00F93ED7 /* AuthAlamofireRepository.swift */; };
 		EDC54D452A6A1B6800404BFB /* Infrastructure.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC54D442A6A1B6800404BFB /* Infrastructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDD968532A6AB75A001AA1CD /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD968522A6AB75A001AA1CD /* HttpClient.swift */; };
 		EDD968552A6AB77A001AA1CD /* HttpClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD968542A6AB77A001AA1CD /* HttpClientRequest.swift */; };
@@ -57,6 +60,9 @@
 /* Begin PBXFileReference section */
 		0BD404DB7852A6E72E0DAF47 /* Pods-Infrastructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infrastructure.debug.xcconfig"; path = "Target Support Files/Pods-Infrastructure/Pods-Infrastructure.debug.xcconfig"; sourceTree = "<group>"; };
 		6721DD7EA8A43702B73BA905 /* Pods_Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED03EEE72A71519500F93ED7 /* AuthRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteRepository.swift; sourceTree = "<group>"; };
+		ED03EEEA2A7168A200F93ED7 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		ED03EEEC2A716ABC00F93ED7 /* AuthAlamofireRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAlamofireRepository.swift; sourceTree = "<group>"; };
 		EDC54D412A6A1B6800404BFB /* Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC54D442A6A1B6800404BFB /* Infrastructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Infrastructure.h; sourceTree = "<group>"; };
 		EDD968522A6AB75A001AA1CD /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
@@ -124,6 +130,14 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		ED03EEE92A71615000F93ED7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ED03EEEA2A7168A200F93ED7 /* LoginRequest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		EDC54D372A6A1B6800404BFB = {
 			isa = PBXGroup;
 			children = (
@@ -149,12 +163,12 @@
 				EDD968652A6AB983001AA1CD /* Auth */,
 				EDD968CE2A6AE563001AA1CD /* Address */,
 				EDD968DB2A6AE6BF001AA1CD /* User */,
-				EDC54D5F2A6A284B00404BFB /* Core */,
+				EDC54D5F2A6A284B00404BFB /* Shared */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
 		};
-		EDC54D5F2A6A284B00404BFB /* Core */ = {
+		EDC54D5F2A6A284B00404BFB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				EDD968852A6ACB5F001AA1CD /* Localizable */,
@@ -162,7 +176,7 @@
 				EDD9685F2A6AB8D6001AA1CD /* Network */,
 				EDD968512A6AB741001AA1CD /* HttpClient */,
 			);
-			path = Core;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		EDD968512A6AB741001AA1CD /* HttpClient */ = {
@@ -237,6 +251,7 @@
 				EDD968682A6AB9F4001AA1CD /* AuthProxy.swift */,
 				EDD968792A6AC2BF001AA1CD /* AuthFirebaseRepository.swift */,
 				EDD968C02A6AE234001AA1CD /* AuthUserDefaultsRepository.swift */,
+				ED03EEEC2A716ABC00F93ED7 /* AuthAlamofireRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -246,6 +261,7 @@
 			children = (
 				EDD968772A6AC1BF001AA1CD /* AuthDataSourceRepository.swift */,
 				EDD968BE2A6AE109001AA1CD /* AuthTemporalRepository.swift */,
+				ED03EEE72A71519500F93ED7 /* AuthRemoteRepository.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -288,6 +304,7 @@
 		EDD968C42A6AE4F5001AA1CD /* HttpClient */ = {
 			isa = PBXGroup;
 			children = (
+				ED03EEE92A71615000F93ED7 /* Service */,
 				EDD968C72A6AE508001AA1CD /* Dto */,
 			);
 			name = HttpClient;
@@ -489,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED03EEEB2A7168A200F93ED7 /* LoginRequest.swift in Sources */,
 				EDD968782A6AC1BF001AA1CD /* AuthDataSourceRepository.swift in Sources */,
 				EDD968CD2A6AE555001AA1CD /* RoleDto.swift in Sources */,
 				EDD968842A6ACB3D001AA1CD /* TechnicalException.swift in Sources */,
@@ -498,6 +516,7 @@
 				EDD968582A6AB7F2001AA1CD /* HttpClientError.swift in Sources */,
 				EDD968822A6AC9F1001AA1CD /* LocalizationFramework+Bundle.swift in Sources */,
 				EDD968C12A6AE234001AA1CD /* AuthUserDefaultsRepository.swift in Sources */,
+				ED03EEED2A716ABC00F93ED7 /* AuthAlamofireRepository.swift in Sources */,
 				EDD968CB2A6AE527001AA1CD /* UserDto.swift in Sources */,
 				EDD968942A6AD35F001AA1CD /* AuthModuleDependencyAssembler.swift in Sources */,
 				EDD9685E2A6AB8A8001AA1CD /* HttpClientAssembler.swift in Sources */,
@@ -506,6 +525,7 @@
 				EDD9687D2A6AC84B001AA1CD /* AuthFirebaseException.swift in Sources */,
 				EDD9687A2A6AC2BF001AA1CD /* AuthFirebaseRepository.swift in Sources */,
 				EDD968D72A6AE62C001AA1CD /* UserMapper.swift in Sources */,
+				ED03EEE82A71519500F93ED7 /* AuthRemoteRepository.swift in Sources */,
 				EDD968BF2A6AE109001AA1CD /* AuthTemporalRepository.swift in Sources */,
 				EDD968D92A6AE64A001AA1CD /* RoleMapper.swift in Sources */,
 				EDD968612A6AB8E5001AA1CD /* NetworkVerify.swift in Sources */,

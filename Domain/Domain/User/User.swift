@@ -8,7 +8,7 @@
 import Foundation
 
 public struct User: Equatable {
-    public let id: String?
+    public let id: Int?
     public var name: String
     public var lastname: String
     public let email: String?
@@ -17,7 +17,7 @@ public struct User: Equatable {
     public let roles: [Role]?
     public let address: [Address]?
     
-    public init(id: String?, name: String, lastname: String, email: String?, phone: String, image: String? = nil, roles: [Role]?, address: [Address]?) {
+    public init(id: Int?, name: String, lastname: String, email: String?, phone: String, image: String? = nil, roles: [Role]?, address: [Address]?) {
         self.id = id
         self.name = name
         self.lastname = lastname

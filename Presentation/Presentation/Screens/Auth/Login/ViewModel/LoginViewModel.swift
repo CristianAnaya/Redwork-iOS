@@ -16,13 +16,16 @@ class LoginViewModel: ObservableObject {
     @Published var otp: String = ""
     @Published var validationId: String = ""
     @Published var loading: Bool = false
+    @Published var failed: Bool = false
 
     @Published var state: LoginViewModelState? = nil
     private var getOTPUseCase: GetOTPUseCase
+    private var loginUseCase: LoginUseCase
     private var cancellables = Set<AnyCancellable>()
 
-    init(getOTPUseCase: GetOTPUseCase) {
+    init(getOTPUseCase: GetOTPUseCase, loginUseCase: LoginUseCase) {
         self.getOTPUseCase = getOTPUseCase
+        self.loginUseCase = loginUseCase
     }
     
     func onPhoneInput(_ phone: String) {
@@ -50,18 +53,31 @@ class LoginViewModel: ObservableObject {
                     break
                 case .failure(let error):
                     self.loading = false
-                    print("DEBUG 1: \(error.localizedDescription)")
                     self.state = .failure(error: error.localizedDescription)
                 }
             } receiveValue: { validationId in
                 self.loading = false
-                print("DEBUG 2: \(validationId)")
                 self.validationId = validationId
             }
             .store(in: &cancellables)
     }
 
     func verifyOTPAndLogin() {
+        state = .loading
+        loginUseCase.invoke(phone: "\(code)\(phone)", code: otp, verificationId: validationId)
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    self.failed = true
+                    self.state = .failure(error: error.localizedDescription)
+                }
+            } receiveValue: { validationId in
+                self.state = .success
+            }
+            .store(in: &cancellables)
     }
 
 

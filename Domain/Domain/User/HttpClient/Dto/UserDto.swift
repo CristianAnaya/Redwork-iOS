@@ -8,7 +8,7 @@
 import Foundation
 
 struct UserDto: Codable {
-    let id: String?
+    let id: Int?
     let name: String
     let lastname: String
     let email: String?

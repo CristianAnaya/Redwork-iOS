@@ -13,15 +13,18 @@ struct AuthProxy: AuthRepository {
     
     private let networkVerify: NetworkVerify
     private let dataSourceRepository: AuthDataSourceRepository
+    private let remoteRepository: AuthRemoteRepository
     private let temportalRepository: AuthTemporalRepository
     
     public init(
         networkVerify: NetworkVerify,
         dataSourceRepository: AuthDataSourceRepository,
+        remoteRepository: AuthRemoteRepository,
         temporalRepository: AuthTemporalRepository
     ) {
         self.networkVerify = networkVerify
         self.dataSourceRepository = dataSourceRepository
+        self.remoteRepository = remoteRepository
         self.temportalRepository = temporalRepository
     }
     
@@ -37,9 +40,26 @@ struct AuthProxy: AuthRepository {
             .eraseToAnyPublisher()
     }
     
-//    func loginWithOTP(phone: String, code: String, verificationId: String) -> AnyPublisher<Auth, Error> {
-//        <#code#>
-//    }
+    func loginWithOTP(phone: String, code: String, verificationId: String) -> AnyPublisher<Auth, Error> {
+        return networkVerify.hasInternetConnection()
+            .flatMap { isConnected -> AnyPublisher<Auth, Error> in
+                if isConnected {
+                    return self.dataSourceRepository.loginWithOTP(phone: phone, code: code, verificationId: verificationId)
+                        .flatMap { phone in
+                            return self.remoteRepository.login(phone: phone)
+                                .tryMap { auth in
+                                    print("AUTHPROXY: \(auth)")
+                                    return auth
+                                }
+                                .eraseToAnyPublisher()
+                        }
+                        .eraseToAnyPublisher()
+                } else {
+                    return Fail(error: TechnicalException.notConnectedToNetwork).eraseToAnyPublisher()
+                }
+            }
+            .eraseToAnyPublisher()
+    }
 //
 //    func register(register: Register) -> AnyPublisher<Auth, Error> {
 //        <#code#>

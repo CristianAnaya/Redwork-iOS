@@ -49,6 +49,11 @@ struct OTPComposableView: View {
 struct OTPComposableView_Previews: PreviewProvider {
     static var previews: some View {
         OTPComposableView()
-            .environmentObject(LoginViewModel(getOTPUseCase: DependencyInjectionContainer.shared.resolve(GetOTPUseCase.self)!))
+            .environmentObject(
+                LoginViewModel(
+                    getOTPUseCase: DependencyInjectionContainer.shared.resolve(GetOTPUseCase.self)!,
+                    loginUseCase: DependencyInjectionContainer.shared.resolve(LoginUseCase.self)!
+                )
+            )
     }
 }

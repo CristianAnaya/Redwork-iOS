@@ -9,6 +9,7 @@ import Foundation
 
 enum AuthUseCaseError: Error {
     case emptyPhoneParameter
+    case unexpectedError
     
     private static let authLocalizable = "AuthLocalizable"
     
@@ -16,6 +17,8 @@ enum AuthUseCaseError: Error {
         switch self {
         case .emptyPhoneParameter:
             return "emptyPhoneParameterMessage".localized(tableName: AuthUseCaseError.authLocalizable)
+        case .unexpectedError:
+            return "unexpectedError".localized(tableName: AuthUseCaseError.authLocalizable)
         }
     }
 }

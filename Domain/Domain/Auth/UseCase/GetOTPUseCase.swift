@@ -16,12 +16,12 @@ public class GetOTPUseCase {
     }
     
     public func invoke(phone: String, country: String) -> AnyPublisher<String, Error> {
-        return authRepository.getOTP(phone: phone, country: country).flatMap { games -> AnyPublisher<String, Error> in
+        return authRepository.getOTP(phone: phone, country: country).flatMap { verificationId -> AnyPublisher<String, Error> in
             if phone.isEmpty || country.isEmpty {
                 return Fail(error: AuthUseCaseError.emptyPhoneParameter).eraseToAnyPublisher()
             }
             
-            return Just(games)
+            return Just(verificationId)
                 .setFailureType(to: Error.self)
                 .eraseToAnyPublisher()
         }

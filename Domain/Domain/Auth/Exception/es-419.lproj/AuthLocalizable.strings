@@ -7,3 +7,4 @@
 */
 
 "emptyPhoneParameterMessage" = "Debe ingresar un telefono para continuar";
+"unexpectedError" = "Ocurrio un error, por favor vuelvelo a intentar.";
