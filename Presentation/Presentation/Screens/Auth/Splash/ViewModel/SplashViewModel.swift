@@ -24,6 +24,7 @@ final class SplashViewModel: ObservableObject {
         self.getSessionUseCase = getSessionUseCase
         self.getFirstTimeUseCase = getFirstTimeUseCase
         getFirstTime()
+        printAllFonts()
     }
     
     func getSessionData() {
@@ -47,4 +48,15 @@ final class SplashViewModel: ObservableObject {
             }
             .store(in: &cancellables)
     }
+    
+    func printAllFonts() {
+        for familyName in UIFont.familyNames {
+            print("Font Family: \(familyName)")
+            for fontName in UIFont.fontNames(forFamilyName: familyName) {
+                print(" - \(fontName)")
+            }
+            print("-------------------------")
+        }
+    }
+
 }

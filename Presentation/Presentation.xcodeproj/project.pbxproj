@@ -8,6 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		71AF18A4A2F6144CD5B0A772 /* Pods_Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236C359B31A4C5CE704F9D71 /* Pods_Presentation.framework */; };
+		ED08FB252A72D25800B06574 /* RolesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB242A72D25800B06574 /* RolesView.swift */; };
+		ED08FB292A72D80100B06574 /* RolesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB282A72D80100B06574 /* RolesViewModel.swift */; };
+		ED08FB2C2A72DA0B00B06574 /* RoleButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB2B2A72DA0B00B06574 /* RoleButtonComponent.swift */; };
+		ED08FB2E2A72DA4300B06574 /* RolesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB2D2A72DA4300B06574 /* RolesContentView.swift */; };
+		ED08FB302A72E2A500B06574 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB2F2A72E2A500B06574 /* CustomNavigationBar.swift */; };
+		ED08FB382A72E5E500B06574 /* RegisterClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB372A72E5E500B06574 /* RegisterClientView.swift */; };
+		ED08FB3A2A72E60B00B06574 /* RegisterWorkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB392A72E60B00B06574 /* RegisterWorkerView.swift */; };
+		ED08FB3C2A72E8CE00B06574 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB3B2A72E8CE00B06574 /* CustomBackButton.swift */; };
+		ED08FB3E2A72EC6100B06574 /* CustomDefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB3D2A72EC6100B06574 /* CustomDefaultButton.swift */; };
+		ED08FB402A72EE9900B06574 /* RegisterWorkerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB3F2A72EE9900B06574 /* RegisterWorkerViewModel.swift */; };
+		ED08FB422A72EEBD00B06574 /* RegisterWorkerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB412A72EEBD00B06574 /* RegisterWorkerState.swift */; };
+		ED08FB452A72EFFA00B06574 /* RegisterWorkerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB442A72EFFA00B06574 /* RegisterWorkerContent.swift */; };
+		ED08FB482A73057E00B06574 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB472A73057E00B06574 /* Extension+View.swift */; };
+		ED08FB532A731A8400B06574 /* RegisterWorkerDependencyAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB522A731A8400B06574 /* RegisterWorkerDependencyAssembler.swift */; };
+		ED08FB562A731F0E00B06574 /* RolesDependencyAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB552A731F0E00B06574 /* RolesDependencyAssembler.swift */; };
+		ED08FB592A73258100B06574 /* RegisterWorkerStateMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB582A73258100B06574 /* RegisterWorkerStateMapper.swift */; };
+		ED08FB5B2A732AFE00B06574 /* RegisterWorkerViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB5A2A732AFE00B06574 /* RegisterWorkerViewModelState.swift */; };
+		ED08FB5D2A732CF900B06574 /* CircularIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB5C2A732CF900B06574 /* CircularIndicator.swift */; };
+		ED08FB612A732EF700B06574 /* CompleteInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB602A732EF700B06574 /* CompleteInfoView.swift */; };
 		ED744C812A6C160200D4A826 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C7C2A6C160200D4A826 /* Constants.swift */; };
 		ED744C822A6C160200D4A826 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C7D2A6C160200D4A826 /* CountryPicker.swift */; };
 		ED744C842A6C160200D4A826 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED744C802A6C160200D4A826 /* Extensions.swift */; };
@@ -78,6 +97,25 @@
 		236C359B31A4C5CE704F9D71 /* Pods_Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3313109C6D257E8EF132366B /* Pods-Presentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.debug.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.debug.xcconfig"; sourceTree = "<group>"; };
 		CBCCEB6564E3B79682735C99 /* Pods-Presentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.release.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.release.xcconfig"; sourceTree = "<group>"; };
+		ED08FB242A72D25800B06574 /* RolesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesView.swift; sourceTree = "<group>"; };
+		ED08FB282A72D80100B06574 /* RolesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesViewModel.swift; sourceTree = "<group>"; };
+		ED08FB2B2A72DA0B00B06574 /* RoleButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleButtonComponent.swift; sourceTree = "<group>"; };
+		ED08FB2D2A72DA4300B06574 /* RolesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesContentView.swift; sourceTree = "<group>"; };
+		ED08FB2F2A72E2A500B06574 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		ED08FB372A72E5E500B06574 /* RegisterClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterClientView.swift; sourceTree = "<group>"; };
+		ED08FB392A72E60B00B06574 /* RegisterWorkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWorkerView.swift; sourceTree = "<group>"; };
+		ED08FB3B2A72E8CE00B06574 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		ED08FB3D2A72EC6100B06574 /* CustomDefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDefaultButton.swift; sourceTree = "<group>"; };
+		ED08FB3F2A72EE9900B06574 /* RegisterWorkerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWorkerViewModel.swift; sourceTree = "<group>"; };
+		ED08FB412A72EEBD00B06574 /* RegisterWorkerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWorkerState.swift; sourceTree = "<group>"; };
+		ED08FB442A72EFFA00B06574 /* RegisterWorkerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWorkerContent.swift; sourceTree = "<group>"; };
+		ED08FB472A73057E00B06574 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		ED08FB522A731A8400B06574 /* RegisterWorkerDependencyAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWorkerDependencyAssembler.swift; sourceTree = "<group>"; };
+		ED08FB552A731F0E00B06574 /* RolesDependencyAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesDependencyAssembler.swift; sourceTree = "<group>"; };
+		ED08FB582A73258100B06574 /* RegisterWorkerStateMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWorkerStateMapper.swift; sourceTree = "<group>"; };
+		ED08FB5A2A732AFE00B06574 /* RegisterWorkerViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWorkerViewModelState.swift; sourceTree = "<group>"; };
+		ED08FB5C2A732CF900B06574 /* CircularIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularIndicator.swift; sourceTree = "<group>"; };
+		ED08FB602A732EF700B06574 /* CompleteInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteInfoView.swift; sourceTree = "<group>"; };
 		ED744C7C2A6C160200D4A826 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ED744C7D2A6C160200D4A826 /* CountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
 		ED744C802A6C160200D4A826 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -163,11 +201,163 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		ED08FB232A72D24100B06574 /* Roles */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB542A731EF900B06574 /* DependencyAssembler */,
+				ED08FB272A72D7F000B06574 /* ViewModel */,
+				ED08FB262A72D7E600B06574 /* View */,
+			);
+			path = Roles;
+			sourceTree = "<group>";
+		};
+		ED08FB262A72D7E600B06574 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB2A2A72D86B00B06574 /* Components */,
+				ED08FB242A72D25800B06574 /* RolesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED08FB272A72D7F000B06574 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB282A72D80100B06574 /* RolesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED08FB2A2A72D86B00B06574 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB2B2A72DA0B00B06574 /* RoleButtonComponent.swift */,
+				ED08FB2D2A72DA4300B06574 /* RolesContentView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ED08FB312A72E55F00B06574 /* RegisterWorker */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB5F2A732ED900B06574 /* CompleteInfo */,
+				ED08FB5E2A732EC700B06574 /* InfoBase */,
+			);
+			path = RegisterWorker;
+			sourceTree = "<group>";
+		};
+		ED08FB322A72E56600B06574 /* RegisterClient */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB342A72E5B700B06574 /* ViewModel */,
+				ED08FB332A72E5B000B06574 /* View */,
+			);
+			path = RegisterClient;
+			sourceTree = "<group>";
+		};
+		ED08FB332A72E5B000B06574 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB372A72E5E500B06574 /* RegisterClientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED08FB342A72E5B700B06574 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED08FB352A72E5CD00B06574 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB432A72EFE200B06574 /* Components */,
+				ED08FB392A72E60B00B06574 /* RegisterWorkerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED08FB362A72E5D100B06574 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB3F2A72EE9900B06574 /* RegisterWorkerViewModel.swift */,
+				ED08FB412A72EEBD00B06574 /* RegisterWorkerState.swift */,
+				ED08FB5A2A732AFE00B06574 /* RegisterWorkerViewModelState.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED08FB432A72EFE200B06574 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB442A72EFFA00B06574 /* RegisterWorkerContent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ED08FB462A73056900B06574 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB472A73057E00B06574 /* Extension+View.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ED08FB512A731A6A00B06574 /* DependencyAssembler */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB522A731A8400B06574 /* RegisterWorkerDependencyAssembler.swift */,
+			);
+			path = DependencyAssembler;
+			sourceTree = "<group>";
+		};
+		ED08FB542A731EF900B06574 /* DependencyAssembler */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB552A731F0E00B06574 /* RolesDependencyAssembler.swift */,
+			);
+			path = DependencyAssembler;
+			sourceTree = "<group>";
+		};
+		ED08FB572A73256D00B06574 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB582A73258100B06574 /* RegisterWorkerStateMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		ED08FB5E2A732EC700B06574 /* InfoBase */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB572A73256D00B06574 /* Mapper */,
+				ED08FB512A731A6A00B06574 /* DependencyAssembler */,
+				ED08FB362A72E5D100B06574 /* ViewModel */,
+				ED08FB352A72E5CD00B06574 /* View */,
+			);
+			path = InfoBase;
+			sourceTree = "<group>";
+		};
+		ED08FB5F2A732ED900B06574 /* CompleteInfo */ = {
+			isa = PBXGroup;
+			children = (
+				ED08FB602A732EF700B06574 /* CompleteInfoView.swift */,
+			);
+			path = CompleteInfo;
+			sourceTree = "<group>";
+		};
 		ED744C792A6C15EF00D4A826 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				ED08FB462A73056900B06574 /* Extension */,
 				ED744C7A2A6C160200D4A826 /* Sources */,
 				ED744C9A2A6C4FFD00D4A826 /* CircularIndicatorMessage.swift */,
+				ED08FB2F2A72E2A500B06574 /* CustomNavigationBar.swift */,
+				ED08FB3B2A72E8CE00B06574 /* CustomBackButton.swift */,
+				ED08FB3D2A72EC6100B06574 /* CustomDefaultButton.swift */,
+				ED08FB5C2A732CF900B06574 /* CircularIndicator.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -315,6 +505,9 @@
 		EDD968AC2A6ADAE4001AA1CD /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				ED08FB322A72E56600B06574 /* RegisterClient */,
+				ED08FB312A72E55F00B06574 /* RegisterWorker */,
+				ED08FB232A72D24100B06574 /* Roles */,
 				EDD968AF2A6ADB05001AA1CD /* OnBoarding */,
 				EDD968AE2A6ADAF3001AA1CD /* Login */,
 				EDD968AD2A6ADAEF001AA1CD /* Splash */,
@@ -657,27 +850,46 @@
 				ED744C9B2A6C4FFD00D4A826 /* CircularIndicatorMessage.swift in Sources */,
 				EDC54D162A6A1A6000404BFB /* PresentationApp.swift in Sources */,
 				ED744C9D2A6C50C000D4A826 /* GetOTP.swift in Sources */,
+				ED08FB612A732EF700B06574 /* CompleteInfoView.swift in Sources */,
+				ED08FB2C2A72DA0B00B06574 /* RoleButtonComponent.swift in Sources */,
+				ED08FB382A72E5E500B06574 /* RegisterClientView.swift in Sources */,
 				EDD9690B2A6B2D2A001AA1CD /* FontNameManager.swift in Sources */,
+				ED08FB592A73258100B06574 /* RegisterWorkerStateMapper.swift in Sources */,
+				ED08FB422A72EEBD00B06574 /* RegisterWorkerState.swift in Sources */,
 				ED744C812A6C160200D4A826 /* Constants.swift in Sources */,
+				ED08FB3A2A72E60B00B06574 /* RegisterWorkerView.swift in Sources */,
 				EDD968EF2A6B0BA8001AA1CD /* AnimatedSplash.swift in Sources */,
 				ED744C872A6C241D00D4A826 /* LoginViewModel.swift in Sources */,
 				EDD968BB2A6ADEF6001AA1CD /* SplashViewModel.swift in Sources */,
+				ED08FB3C2A72E8CE00B06574 /* CustomBackButton.swift in Sources */,
 				EDD968EB2A6AF260001AA1CD /* AuthDependencyInjection.swift in Sources */,
 				ED744C992A6C4EAF00D4A826 /* LoginViewContent.swift in Sources */,
+				ED08FB252A72D25800B06574 /* RolesView.swift in Sources */,
+				ED08FB5D2A732CF900B06574 /* CircularIndicator.swift in Sources */,
+				ED08FB5B2A732AFE00B06574 /* RegisterWorkerViewModelState.swift in Sources */,
 				EDD968ED2A6AF27F001AA1CD /* SplashDependencyAssembler.swift in Sources */,
+				ED08FB3E2A72EC6100B06574 /* CustomDefaultButton.swift in Sources */,
+				ED08FB482A73057E00B06574 /* Extension+View.swift in Sources */,
 				EDD969192A6B451A001AA1CD /* OnBoardingViewModel.swift in Sources */,
 				EDD968E92A6AF20E001AA1CD /* DependencyInjectionContainer.swift in Sources */,
+				ED08FB562A731F0E00B06574 /* RolesDependencyAssembler.swift in Sources */,
 				EDD968AA2A6ADA44001AA1CD /* InfrastructureDependencyInjection.swift in Sources */,
 				EDD969202A6B4E20001AA1CD /* OnBoardingContent.swift in Sources */,
+				ED08FB532A731A8400B06574 /* RegisterWorkerDependencyAssembler.swift in Sources */,
+				ED08FB2E2A72DA4300B06574 /* RolesContentView.swift in Sources */,
 				EDD9691D2A6B4A5B001AA1CD /* SaveFirstTime.swift in Sources */,
+				ED08FB402A72EE9900B06574 /* RegisterWorkerViewModel.swift in Sources */,
 				ED744C822A6C160200D4A826 /* CountryPicker.swift in Sources */,
 				EDD9691B2A6B499D001AA1CD /* OnBoardingViewModelState.swift in Sources */,
 				EDD968FF2A6B2BD7001AA1CD /* Color.swift in Sources */,
 				EDD969092A6B2D0D001AA1CD /* FontManager.swift in Sources */,
+				ED08FB452A72EFFA00B06574 /* RegisterWorkerContent.swift in Sources */,
 				ED744C9F2A6C56F900D4A826 /* LoginViewModelState.swift in Sources */,
 				ED744C842A6C160200D4A826 /* Extensions.swift in Sources */,
 				EDD968F42A6B17D7001AA1CD /* LoginView.swift in Sources */,
 				EDD968F72A6B184B001AA1CD /* OnBoardingView.swift in Sources */,
+				ED08FB292A72D80100B06574 /* RolesViewModel.swift in Sources */,
+				ED08FB302A72E2A500B06574 /* CustomNavigationBar.swift in Sources */,
 				ED744CA22A6C5BA300D4A826 /* LoginDependencyAssembler.swift in Sources */,
 				EDD968B42A6ADB6E001AA1CD /* SplashView.swift in Sources */,
 				EDD968F12A6B1463001AA1CD /* GetSession.swift in Sources */,

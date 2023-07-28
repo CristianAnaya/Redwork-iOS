@@ -31,6 +31,7 @@ struct FontManager {
     // Font medium
     static let mediumHeadLine = Font.custom(FontNameManager.Poppins.medium, size: 28.0)
     static let mediumHeadLine_2 = Font.custom(FontNameManager.Poppins.medium, size: 22.0)
+    static let mediumTitle_15 = Font.custom(FontNameManager.Poppins.medium, size: 15.0)
     static let mediumTitle = Font.custom(FontNameManager.Poppins.medium, size: 18.0)
     static let mediumBody = Font.custom(FontNameManager.Poppins.medium, size: 14.0)
     

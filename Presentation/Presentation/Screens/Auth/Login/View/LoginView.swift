@@ -25,7 +25,29 @@ struct LoginView: View {
         ZStack(alignment: .center) {
             LoginViewContent(viewModel: viewModel)
             if viewModel.loading {
-                CircularIndicatorMessage(message: "Por favor espere un momento")
+                CircularIndicatorMessage(message: "Por favor espere un momento..")
+            }
+            
+            if case .loading = viewModel.state {
+                CircularIndicatorMessage(message: "Confirmando codigo...")
+            }
+            
+            if case let .success(data) = viewModel.state {
+                if data.user != nil {
+                    NavigationView {
+                        ClientHomeView()
+                    }
+                } else {
+                    NavigationView {
+                        RolesView()
+                            .environmentObject(
+                                DependencyInjectionContainer.shared.resolve(
+                                    RolesViewModel.self,
+                                    argument1: "\(viewModel.code)\(viewModel.phone)"
+                                )!
+                            )
+                    }
+                }
             }
             
         }

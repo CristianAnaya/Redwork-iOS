@@ -27,10 +27,29 @@ final class AuthAlamofireRepository: AuthRemoteRepository {
             queue: .global()
         )
         .tryMap { authDto in
-            print("DEBUG: \(authDto)")
             return authDto.toAuth()
         }
         .eraseToAnyPublisher()
+    }
+    
+    func register(register: Register) -> AnyPublisher<Auth, Error> {
+        do {
+            let encoder = JSONEncoder()
+            let jsonData = try encoder.encode(register.toRegisterDto())
+            let request = RegisterRequest(object: jsonData)
+
+            return httpClient.requestGeneric(
+                request: request,
+                entity: AuthDto.self,
+                queue: .global()
+            )
+            .tryMap { authDto in
+                return authDto.toAuth()
+            }
+            .eraseToAnyPublisher()
+        } catch {
+            return Fail(error: TechnicalException.technicalError).eraseToAnyPublisher()
+        }
     }
 
 }

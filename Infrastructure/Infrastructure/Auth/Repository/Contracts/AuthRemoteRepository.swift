@@ -11,4 +11,5 @@ import Domain
 
 protocol AuthRemoteRepository {
     func login(phone: String) -> AnyPublisher<Auth, Error>
+    func register(register: Register) -> AnyPublisher<Auth, Error>
 }

@@ -45,29 +45,6 @@ struct CircularIndicatorMessage: View {
         .frame(width: 250)
     }
 
-//
-//    var body : some View {
-//
-//        VStack {
-//            Circle()
-//                .trim(from: 0, to: 0.8)
-//                .stroke(AngularGradient(
-//                    gradient: .init(
-//                        colors: [Color.primaryLight,
-//                                 Color.primaryLight]),
-//                    center: .center),
-//                        style: StrokeStyle(lineWidth: 8, lineCap: .round)
-//                )
-//                .frame(width: 45, height: 45)
-//                .rotationEffect(.init(degrees: self.animate ? 360 : 0))
-//                .animation(.linear(duration: 0.7).repeatForever(autoreverses: false), value: isRotating)
-//
-//        }
-//        .onAppear {
-//            self.animate.toggle()
-//            isRotating = true
-//        }
-//    }
 }
 
 struct CircularIndicatorMessage_Previews: PreviewProvider {

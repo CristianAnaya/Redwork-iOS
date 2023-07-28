@@ -74,8 +74,8 @@ class LoginViewModel: ObservableObject {
                     self.failed = true
                     self.state = .failure(error: error.localizedDescription)
                 }
-            } receiveValue: { validationId in
-                self.state = .success
+            } receiveValue: { auth in
+                self.state = .success(data: auth)
             }
             .store(in: &cancellables)
     }

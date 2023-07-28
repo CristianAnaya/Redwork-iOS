@@ -14,7 +14,7 @@ struct AuthProxy: AuthRepository {
     private let networkVerify: NetworkVerify
     private let dataSourceRepository: AuthDataSourceRepository
     private let remoteRepository: AuthRemoteRepository
-    private let temportalRepository: AuthTemporalRepository
+    private let temporalRepository: AuthTemporalRepository
     
     public init(
         networkVerify: NetworkVerify,
@@ -25,7 +25,7 @@ struct AuthProxy: AuthRepository {
         self.networkVerify = networkVerify
         self.dataSourceRepository = dataSourceRepository
         self.remoteRepository = remoteRepository
-        self.temportalRepository = temporalRepository
+        self.temporalRepository = temporalRepository
     }
     
     func getOTP(phone: String, country: String) -> AnyPublisher<String, Error> {
@@ -46,12 +46,11 @@ struct AuthProxy: AuthRepository {
                 if isConnected {
                     return self.dataSourceRepository.loginWithOTP(phone: phone, code: code, verificationId: verificationId)
                         .flatMap { phone in
-                            return self.remoteRepository.login(phone: phone)
-                                .tryMap { auth in
-                                    print("AUTHPROXY: \(auth)")
-                                    return auth
-                                }
-                                .eraseToAnyPublisher()
+                            self.remoteRepository.login(phone: phone)
+                        }
+                        .flatMap { auth in
+                            self.temporalRepository.saveSession(auth: auth)
+                                .map { _ in auth }
                         }
                         .eraseToAnyPublisher()
                 } else {
@@ -60,22 +59,36 @@ struct AuthProxy: AuthRepository {
             }
             .eraseToAnyPublisher()
     }
-//
-//    func register(register: Register) -> AnyPublisher<Auth, Error> {
-//        <#code#>
-//    }
+
+    func register(register: Register) -> AnyPublisher<Auth, Error> {
+        return networkVerify.hasInternetConnection()
+            .flatMap { isConnected -> AnyPublisher<Auth, Error> in
+                if isConnected {
+                    // Realizar el registro en el repositorio remoto y obtener el resultado
+                    return self.remoteRepository.register(register: register)
+                        .flatMap { auth in
+                            // Guardar la sesión en el repositorio temporal y luego devolver el resultado
+                            self.temporalRepository.saveSession(auth: auth)
+                                .map { _ in auth }
+                        }
+                        .eraseToAnyPublisher()
+                } else {
+                    return Fail(error: TechnicalException.notConnectedToNetwork).eraseToAnyPublisher()
+                }
+            }
+            .eraseToAnyPublisher()
+    }
     
     func getSession() -> AnyPublisher<Auth, Error> {
-        return temportalRepository.getSessionData()
+        return temporalRepository.getSessionData()
     }
     
     func firstTime(status: Bool) -> AnyPublisher<Void, Error> {
-        return temportalRepository.firstTime(status: status)
+        return temporalRepository.firstTime(status: status)
     }
     
     func getFirstTime() -> AnyPublisher<Bool, Error> {
-        return temportalRepository.getFirstTime()
+        return temporalRepository.getFirstTime()
     }
-    
     
 }

@@ -19,6 +19,8 @@ struct AuthFirebaseRepository: AuthDataSourceRepository {
     
     func getOTP(phone: String, country: String) -> AnyPublisher<String, Error> {
         return Future<String, Error> { promise in
+            firebaseAuth.settings?.isAppVerificationDisabledForTesting = true
+
             PhoneAuthProvider.provider().verifyPhoneNumber("\(country)\(phone)", uiDelegate: nil) { verificationID, error in
                 if let nsError = error as NSError? {
                     if let error = nsError as NSError?, let errorCode = AuthErrorCode.Code(rawValue: error.code) {
@@ -40,8 +42,9 @@ struct AuthFirebaseRepository: AuthDataSourceRepository {
     }
     
     func loginWithOTP(phone: String, code: String, verificationId: String) -> AnyPublisher<String, Error> {
-        print("loginWithOTP \(code) \(verificationId)")
         return Future<String, Error> { promise in
+            firebaseAuth.settings?.isAppVerificationDisabledForTesting = true
+
             let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationId, verificationCode: code)
             
             firebaseAuth.signIn(with: credential) { authResult, error in

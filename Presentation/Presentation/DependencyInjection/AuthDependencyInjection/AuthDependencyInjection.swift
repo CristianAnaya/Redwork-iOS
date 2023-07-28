@@ -13,7 +13,9 @@ final class AuthDependencyInjection: Assembly {
         let assemblies: [Assembly] = [
             SplashDependencyAssembler(),
             OnBoardingDependencyAssembler(),
-            LoginDependencyAssembler()
+            LoginDependencyAssembler(),
+            RolesDependencyAssembler(),
+            RegisterWorkerDependencyAssembler()
         ]
         
         assemblies.forEach { $0.assemble(container: container) }

@@ -40,6 +40,16 @@ final class HttpClient {
         
         if method == .post || method == .put {
             urlRequest = try! JSONEncoding.default.encode(urlRequest, with: request.params)
+            
+            if let params = request.params {
+                 do {
+                     let jsonData = try JSONSerialization.data(withJSONObject: params, options: [])
+                     urlRequest.httpBody = jsonData
+                 } catch {
+                     // Handle JSON serialization error
+                     return Fail(error: HttpClientError(status: .unknown)).eraseToAnyPublisher()
+                 }
+             }
         }
         
         return session.request(urlRequest)

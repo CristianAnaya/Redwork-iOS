@@ -18,6 +18,9 @@ struct SaveFirstTime: View {
                 OnBoardingContent(viewModel: viewModel)
             case .success:
                 LoginView()
+                    .environmentObject(
+                        DependencyInjectionContainer.shared.resolve(LoginViewModel.self)!
+                    )
             case .failure(let error):
                 Text("Error: \(error)")
             }

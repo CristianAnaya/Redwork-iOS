@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E326B111BBB71D11474A1F59 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A662B799D564ABBD7933C8A0 /* Pods_Domain.framework */; };
 		ED03EEEF2A71783600F93ED7 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED03EEEE2A71783600F93ED7 /* LoginUseCase.swift */; };
+		ED08FB502A73143500B06574 /* RegisterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB4F2A73143500B06574 /* RegisterUseCase.swift */; };
 		EDC54D312A6A1B3A00404BFB /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC54D302A6A1B3A00404BFB /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDC54D502A6A1FD900404BFB /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC54D4F2A6A1FD900404BFB /* Auth.swift */; };
 		EDC54D522A6A20DD00404BFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC54D512A6A20DD00404BFB /* User.swift */; };
@@ -32,6 +33,7 @@
 		92E6391D615BA11290E032FB /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		A662B799D564ABBD7933C8A0 /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED03EEEE2A71783600F93ED7 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		ED08FB4F2A73143500B06574 /* RegisterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCase.swift; sourceTree = "<group>"; };
 		EDC54D2D2A6A1B3A00404BFB /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC54D302A6A1B3A00404BFB /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		EDC54D4F2A6A1FD900404BFB /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				EDD968E32A6AEDFE001AA1CD /* GetFirstTimeUseCase.swift */,
 				EDD968E52A6AEE44001AA1CD /* SaveFirstTimeUseCase.swift */,
 				ED03EEEE2A71783600F93ED7 /* LoginUseCase.swift */,
+				ED08FB4F2A73143500B06574 /* RegisterUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				EDC54D5A2A6A223600404BFB /* Address.swift in Sources */,
 				EDD968A32A6AD857001AA1CD /* LocalizationFramework+Bundle.swift in Sources */,
 				EDD968BD2A6ADFF7001AA1CD /* GetSessionUseCase.swift in Sources */,
+				ED08FB502A73143500B06574 /* RegisterUseCase.swift in Sources */,
 				ED03EEEF2A71783600F93ED7 /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

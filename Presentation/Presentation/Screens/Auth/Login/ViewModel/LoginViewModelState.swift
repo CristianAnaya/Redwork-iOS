@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import Domain
 
 enum LoginViewModelState: Equatable {
     case loading
-    case success
+    case success(data: Auth)
     case failure(error: String)
 }

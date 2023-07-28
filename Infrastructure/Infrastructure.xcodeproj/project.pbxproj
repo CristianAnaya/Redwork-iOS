@@ -11,6 +11,9 @@
 		ED03EEE82A71519500F93ED7 /* AuthRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED03EEE72A71519500F93ED7 /* AuthRemoteRepository.swift */; };
 		ED03EEEB2A7168A200F93ED7 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED03EEEA2A7168A200F93ED7 /* LoginRequest.swift */; };
 		ED03EEED2A716ABC00F93ED7 /* AuthAlamofireRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED03EEEC2A716ABC00F93ED7 /* AuthAlamofireRepository.swift */; };
+		ED08FB4A2A730A2800B06574 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB492A730A2800B06574 /* RegisterRequest.swift */; };
+		ED08FB4C2A730AA700B06574 /* RegisterDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB4B2A730AA700B06574 /* RegisterDto.swift */; };
+		ED08FB4E2A730D3200B06574 /* RegisterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FB4D2A730D3200B06574 /* RegisterMapper.swift */; };
 		EDC54D452A6A1B6800404BFB /* Infrastructure.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC54D442A6A1B6800404BFB /* Infrastructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDD968532A6AB75A001AA1CD /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD968522A6AB75A001AA1CD /* HttpClient.swift */; };
 		EDD968552A6AB77A001AA1CD /* HttpClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD968542A6AB77A001AA1CD /* HttpClientRequest.swift */; };
@@ -63,6 +66,9 @@
 		ED03EEE72A71519500F93ED7 /* AuthRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteRepository.swift; sourceTree = "<group>"; };
 		ED03EEEA2A7168A200F93ED7 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		ED03EEEC2A716ABC00F93ED7 /* AuthAlamofireRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAlamofireRepository.swift; sourceTree = "<group>"; };
+		ED08FB492A730A2800B06574 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		ED08FB4B2A730AA700B06574 /* RegisterDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDto.swift; sourceTree = "<group>"; };
+		ED08FB4D2A730D3200B06574 /* RegisterMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMapper.swift; sourceTree = "<group>"; };
 		EDC54D412A6A1B6800404BFB /* Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC54D442A6A1B6800404BFB /* Infrastructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Infrastructure.h; sourceTree = "<group>"; };
 		EDD968522A6AB75A001AA1CD /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				ED03EEEA2A7168A200F93ED7 /* LoginRequest.swift */,
+				ED08FB492A730A2800B06574 /* RegisterRequest.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -316,6 +323,7 @@
 			children = (
 				EDD968C82A6AE515001AA1CD /* AuthDto.swift */,
 				EDD968CC2A6AE555001AA1CD /* RoleDto.swift */,
+				ED08FB4B2A730AA700B06574 /* RegisterDto.swift */,
 			);
 			path = Dto;
 			sourceTree = "<group>";
@@ -350,6 +358,7 @@
 			children = (
 				EDD968D42A6AE602001AA1CD /* AuthMapper.swift */,
 				EDD968D82A6AE64A001AA1CD /* RoleMapper.swift */,
+				ED08FB4D2A730D3200B06574 /* RegisterMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -508,8 +517,11 @@
 			files = (
 				ED03EEEB2A7168A200F93ED7 /* LoginRequest.swift in Sources */,
 				EDD968782A6AC1BF001AA1CD /* AuthDataSourceRepository.swift in Sources */,
+				ED08FB4C2A730AA700B06574 /* RegisterDto.swift in Sources */,
 				EDD968CD2A6AE555001AA1CD /* RoleDto.swift in Sources */,
 				EDD968842A6ACB3D001AA1CD /* TechnicalException.swift in Sources */,
+				ED08FB4A2A730A2800B06574 /* RegisterRequest.swift in Sources */,
+				ED08FB4E2A730D3200B06574 /* RegisterMapper.swift in Sources */,
 				EDD9685B2A6AB849001AA1CD /* URLSessionExtension.swift in Sources */,
 				EDD968642A6AB904001AA1CD /* NetworkVerifyAssembler.swift in Sources */,
 				EDD968552A6AB77A001AA1CD /* HttpClientRequest.swift in Sources */,

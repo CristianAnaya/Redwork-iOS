@@ -30,8 +30,17 @@ struct PresentationApp: App {
 
     var body: some Scene {
         WindowGroup {
-            SplashView()
-                .environmentObject(DependencyInjectionContainer.shared.resolve(SplashViewModel.self)!)
+            NavigationView {
+                RolesView()
+                    .environmentObject(
+                        DependencyInjectionContainer.shared.resolve(
+                            RolesViewModel.self,
+                            argument1: "+573145593725"
+                        )!
+                    )
+            }
+//            SplashView()
+//                .environmentObject(DependencyInjectionContainer.shared.resolve(SplashViewModel.self)!)
         }
     }
 }

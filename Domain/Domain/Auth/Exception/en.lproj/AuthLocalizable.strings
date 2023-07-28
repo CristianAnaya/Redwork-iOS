@@ -8,3 +8,5 @@
 
 "emptyPhoneParameterMessage" = "You must enter a phone number to continue.";
 "unexpectedError" = "An error occurred, please try again.";
+"emptyParam" = "The field cannot to be empty.";
+"invalidEmail" = "The email is invalid.";
